@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../assets/logo.png";
 
-const CartWidget = () => {
+const LogoWidget = () => {
     return(
         <div>
             <img src={Logo} className="App-logo" alt="logo"></img>
@@ -9,4 +9,4 @@ const CartWidget = () => {
     )
 }
 
-export default CartWidget
+export default LogoWidget

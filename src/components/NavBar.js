@@ -1,21 +1,25 @@
 import React from "react";
 
+
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import CartWidget from './CartWidget';
+import LogoWidget from './LogoWidget';
+import CartWitget from './CartWitget';
+
 
 const NavBar = () => {
     return(
         <div>
-            <Navbar bg="dark" variant="dark">
+            <Navbar bg="dark" variant="dark" className="navBar">
                 <Container>
-                    <Nav><CartWidget /></Nav>
-                    <Nav className="me-auto m-2 botonera">
+                    <LogoWidget />
+                    <Nav className="me-auto m-2 navBotonera">
                         <Nav.Link href="#home" className="botonera">Home</Nav.Link>
-                        <Nav.Link href="#features" className="botonera">Tienda</Nav.Link>
-                        <Nav.Link href="#pricing" className="botonera">Distribuidora</Nav.Link>
+                        <Nav.Link href="#tienda" className="botonera">Tienda</Nav.Link>
+                        <Nav.Link href="#distribuidora" className="botonera">Distribuidora</Nav.Link>
                     </Nav>
+                    <CartWitget />
                 </Container>
             </Navbar>
             <br />
