@@ -1,17 +1,16 @@
 import './App.css';
-import NavBar from './components/NavBar'
-import Hijo from './components/Hijo';
 import 'bootstrap-css-only/css/bootstrap.min.css';
-import ItemListConteiner from './components/ItemListConteiner';
+//import ItemListConteiner from './app/components/ItemListConteiner';
+import Router from "./app/Router";
+import Item from './app/components/Item';
+
 
 function App() {
+
   return (
     <div className="App">
-      <NavBar />
-      <ItemListConteiner greeting="Bienvenidos, conozca más sobre nosotros!" />
-
-      <hr></hr>
-      <Hijo />
+      <Router />
+      <Item />
     </div>
   );
 }

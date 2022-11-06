@@ -15,9 +15,9 @@ const NavBar = () => {
                 <Container>
                     <LogoWidget />
                     <Nav className="me-auto m-2 navBotonera">
-                        <Nav.Link href="#home" className="botonera">Home</Nav.Link>
-                        <Nav.Link href="#tienda" className="botonera">Tienda</Nav.Link>
-                        <Nav.Link href="#distribuidora" className="botonera">Distribuidora</Nav.Link>
+                        <li><Nav.Link href="http://localhost:3000" className="botonera">Home</Nav.Link></li>
+                        <li><Nav.Link href="http://localhost:3000/Tienda" className="botonera">Tienda</Nav.Link></li>
+                        <li><Nav.Link href="http://localhost:3000/Distribuidora" className="botonera">Distribuidora</Nav.Link></li>
                     </Nav>
                     <CartWitget />
                 </Container>

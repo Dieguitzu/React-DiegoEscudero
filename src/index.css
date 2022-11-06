@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
-  background-image: url(./assets/fondo.webp);
+  background-image: url(./app/assets/img/fondo.webp);
 }
 
 code {
