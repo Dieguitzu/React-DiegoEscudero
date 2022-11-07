@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Products from "../services/products";
+import ItemList from "./ItemList";
 
 const Item = ({data}) => {
     console.log(data)

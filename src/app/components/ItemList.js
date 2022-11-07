@@ -1,12 +1,13 @@
 import React from "react"
 import Item from "../components/Item"
+import ItemListConteiner from "./ItemListConteiner"
 
 
 const ItemList = (products) =>{
     return(
         <div>
-            {products.map((product) =>(
-                <Item data={product}/>
+            {products.map((res) =>(
+                <Item data={res}/>
             ))}
         </div>
     )

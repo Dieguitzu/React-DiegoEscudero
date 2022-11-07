@@ -1,26 +1,14 @@
 import React, {useEffect, useState} from 'react';
-import ItemList from './ItemList'
+import getProduct from '../services/products';
 
 
-export const ItemListConteiner = ({texto}) => {
 
-    const [data,setData] = useState([])
+export const ItemListConteiner = () => {
 
     useEffect(() => {
-        const getProduct = new Promise (resolve => {
-            setTimeout(() => {
-                resolve(products);
-            }, 3000)
-        })
-        getProduct.then(res => console.log(res))
+        getProduct().then(Data => setData(Data))
     }, [])
+    }
 
-
-
-    return(
-        <>
-        </>
-    )
-}
 
 export default ItemListConteiner
