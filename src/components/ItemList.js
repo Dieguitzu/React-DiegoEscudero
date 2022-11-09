@@ -5,9 +5,9 @@ import '../style/ItemList.css'
 
 const ItemList = ({data}) =>{
     return(
-        <div className='card divProduct d-flex column p-3'>
+        <div className='divItemList d-flex column p-1'>
                 {data.map((producto) =>
-                    <Item className="card-body d-flex column" key={producto.id}
+                    <Item key={producto.id}
                     producto={producto}/>)}
         </div>
     )

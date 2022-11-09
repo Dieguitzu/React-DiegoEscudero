@@ -1,10 +1,13 @@
-import React from 'react'
-import ItemDetails from './ItemDetails'
+import React, { useEffect } from 'react'
+import { useParams } from 'react-router-dom'
+import ItemDetails from './ItemDetail'
 
 const ItemDetailContainer = () => {
-    return (
-    <div><ItemDetails/></div>
-    )
-}
+    const {id} = useParams()
+    useEffect(( )=> {console.log (id)
+    return() =>{
+        <div>{id}</div>
+    }
+},[id])}
 
 export default ItemDetailContainer

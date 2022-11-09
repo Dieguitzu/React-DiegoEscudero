@@ -11,7 +11,7 @@ const ItemListConteiner = () => {
         getProduct().then(response => setData(response))
     }, [])
     return (
-        <div className='card-body products m-3'>
+        <div className=' products '>
             <ItemList data={data} />
         </div>
     )
