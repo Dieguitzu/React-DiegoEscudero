@@ -5,7 +5,6 @@ const CartWitget = () => {
     return(
         <>
         <button className="emoji">🛒</button>
-        <spam>5</spam>   
         </>
     )
 }

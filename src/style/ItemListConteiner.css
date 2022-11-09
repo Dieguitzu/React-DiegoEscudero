@@ -1,0 +1,4 @@
+.products{
+    max-width: fit-content;
+    display: flex;
+}

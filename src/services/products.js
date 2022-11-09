@@ -1,5 +1,5 @@
-import React,{setTimeout} from 'react'
-import Data from '../assets/data.json'
+
+import Data from '../app/assets/data.json'
 
 export const getProduct = () => {
     return new Promise (resolve => {

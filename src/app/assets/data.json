@@ -1,6 +1,7 @@
 [
 {
     "id": 1,
+    "img":"./carbon.webp",
     "nombre": "Jabon de carbon activado",
     "precio":400,
     "cantidad":1,
@@ -9,6 +10,7 @@
 },
 {
     "id": 2,
+    "img":"./lavanda.webp",
     "nombre": "Jabon de lavanda",
     "precio":350,
     "cantidad":1,
@@ -17,6 +19,7 @@
 },
 {
     "id": 3,
+    "img":"./lavanda.webp",
     "nombre": "Jabon de canela y curcuma",
     "precio":350,
     "cantidad":1,
@@ -25,6 +28,7 @@
 },
 {
     "id": 4,
+    "img":"./neutro.webp",
     "nombre": "Jabon de neutro",
     "precio":350,
     "cantidad":1,

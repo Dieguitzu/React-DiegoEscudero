@@ -7,6 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
   background-image: url(./app/assets/img/fondo.webp);
+  background-attachment: fixed;
+  display:flex;
+  flex-direction: column;
 }
 
 code {
