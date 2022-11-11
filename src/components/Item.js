@@ -9,7 +9,6 @@ const Item = ({producto}) => {
     let resta = () => {setContador(contador <= 1 ? contador : contador - 1)
     }
 
-
         return(
             <div className="card divItem m-2">
                 <img className="imgProduct " src={require(`../app/assets/img/${producto.img}`)} />

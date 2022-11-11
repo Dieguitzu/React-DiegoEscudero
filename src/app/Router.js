@@ -5,6 +5,8 @@ import Layout from "./Layout"
 import ItemListContainer from '../components/ItemListConteiner'
 import Distribuidora from "../pages/Distribuidora"
 import ItemDetailContainer from "../components/ItemDetailContainer";
+import Category from "../components/Category";
+import CategoryConteiner from "../components/CategoryConteiner";
 
 const Router = () => (
     <BrowserRouter>
@@ -13,7 +15,7 @@ const Router = () => (
                 <Route index element={<Init/>} />
                 <Route path="Tienda" element={<Tienda/>} />
                 <Route path="Tienda/Item/:id" element={<ItemDetailContainer/>} />
-                <Route path="Tienda/category" element={<ItemListContainer />} />
+                <Route path="Tienda/Category/:idCategory" element={<Category/>} />
                 <Route path="Distribuidora" element={<Distribuidora/>}/>
             </Route>
             <Route path="Tienda" element={<ItemListContainer/>}/>

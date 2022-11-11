@@ -1,20 +1,27 @@
 import React from 'react'
-
-import Dropdown from 'react-bootstrap/Dropdown';
-import {Link} from 'react-router-dom';
+import {useParams} from 'react-router-dom';
+import {useEffect, useState} from 'react';
 import {getProduct} from '../services/products';
 
-export function Category() {
+import CategoryConteiner from './CategoryConteiner';
+
+
+const Category = () => {
+    const{category} = useParams()
+    const [data, SetData] = useState([])
+    
+
+    useEffect(()=>{
+        getProduct(category).then(data=>{
+            SetData(data)
+        })
+    },[])
+    const Categorys = data.find(data => data.category == category)
     return (
-    <Dropdown>
-        <Dropdown.Toggle variant="success" id="dropdown-basic">
-            Categorias
-        </Dropdown.Toggle>
-        <Dropdown.Menu>
-            <Dropdown.Item ><Link to={`Item/:category`} className='btn btn_ver_mas'>Jabon</Link></Dropdown.Item>
-            <Dropdown.Item ><Link to={`Item/:category`} className='btn btn_ver_mas'>Cabello</Link></Dropdown.Item>
-        </Dropdown.Menu>
-    </Dropdown>
-    );
+
+        <div className="divItemList p-1">aefaefaef{Categorys && <CategoryConteiner ItemCateg={Categorys}/>}</div>
+
+    )
 }
 
+export default Category

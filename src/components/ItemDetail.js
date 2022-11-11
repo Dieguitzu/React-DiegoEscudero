@@ -1,8 +1,6 @@
-import {useParams, Link} from 'react-router-dom';
-import ItemDetailsContainer from './ItemDetailContainer';
+
 
 const ItemDetail = ({DetailItem}) => {
-    console.log(DetailItem)
     return (
             <div className="card divItem   m-2">
                 <img className="imgProduct " src={require(`../app/assets/img/${DetailItem.img}`)} />

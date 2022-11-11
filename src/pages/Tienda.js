@@ -1,12 +1,12 @@
 import React from 'react'
 import ItemListConteiner from '../components/ItemListConteiner';
-import {Category} from "../components/Category"
+import {BotonCategory} from "../components/BotonCategory"
 
 
 const Tienda = () => {
   return (
     <div className='divTienda'>
-      <Category/>
+      <BotonCategory/>
 
       <ItemListConteiner/>
 
