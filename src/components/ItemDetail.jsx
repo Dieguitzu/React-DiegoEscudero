@@ -4,13 +4,22 @@ import { useCartContext } from '../context/CartContext';
 
 
 const ItemDetail = ({DetailItem}) => {
-    const {addProduct} =  useCartContext
+    const {addProduct} =  useCartContext()
 
     let [contador, setContador] = useState(1)
-    let suma = () => {setContador (contador >= 10 ? contador : contador + 1)}
-    let resta = () => {setContador(contador <= 1 ? contador : contador - 1)}
+    const suma = () => {
+        if(contador < 10){
+            setContador(contador + 1)
+        }
+        
+    const resta = () => {
+        if(contador > 1){
+            setContador(contador - 1)
+        }
+    }
 
-    const onAdd = (contador) => {
+
+    const onAdd = () => {
         addProduct(DetailItem, contador)
     }
 
@@ -26,11 +35,11 @@ const ItemDetail = ({DetailItem}) => {
                         <p onClick={suma} className="botonCount pl-4">+</p>
                     </div>
                     <p className="card-text mb-3">${DetailItem.precio}</p>
-                    <button  className="btn btn-primary" onAdd={onAdd}><Link to='/Cart.js'>Agregar al carrito</Link></button>
+                    <button  className="btn btn-primary" onAdd={onAdd}>Agregar al carrito</button>
                 </div>
             </div>
     )
 }
-
+}
 
 export default ItemDetail

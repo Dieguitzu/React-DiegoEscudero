@@ -20,6 +20,10 @@
   border-color: rgb(12, 12, 12) !important;
   color: black !important;
 }
+.btn2:hover{
+    color: rgb(190, 186, 186) !important;
+      text-decoration: none;
+}
 
 .btn2{
     text-decoration: none !important;
@@ -125,5 +129,15 @@
 .botonCount{
   cursor: pointer;
   margin-bottom: -0.1%;
+}
+
+
+.btnDetail{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.btnDetail:hover {
+  color: rgb(190, 186, 186);
+  text-decoration: none;
 }
 
