@@ -1,25 +1,29 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Init from "../pages/Init"
-import Tienda from "../pages/Tienda"
 import Layout from "./Layout"
-import ItemListContainer from '../components/ItemListConteiner'
+import ItemListContainer from '../pages/ItemListConteiner'
 import Distribuidora from "../pages/Distribuidora"
-import ItemDetailContainer from "../components/ItemDetailContainer";
-import Category from "../components/Category";
-import CategoryConteiner from "../components/CategoryConteiner";
+import ItemDetailContainer from "../pages/ItemDetailContainer";
+import Cart from "../components/Cart";
+import React from "react";
+import CartProvider from "../context/CartContext";
+
 
 const Router = () => (
+    
     <BrowserRouter>
-        <Routes>  
-            <Route element={<Layout/>} path={process.env.PUBLIC_URL}>
-                <Route index element={<Init/>} />
-                <Route path="Tienda" element={<Tienda/>} />
-                <Route path="Tienda/Item/:id" element={<ItemDetailContainer/>} />
-                <Route path="Tienda/Category/:idCategory" element={<Category/>} />
-                <Route path="Distribuidora" element={<Distribuidora/>}/>
-            </Route>
-            <Route path="Tienda" element={<ItemListContainer/>}/>
-        </Routes>
+        <CartProvider>
+            <Routes>  
+                <Route element={<Layout/>} path={process.env.PUBLIC_URL}>
+                    <Route index element={<Init/>} />
+                    <Route path="Item/:id" element={<ItemDetailContainer/>} />
+                    <Route path="Category/:idCategory" element={<ItemListContainer/>} />
+                    <Route path="Cart" element={<Cart/>}/>
+                    <Route path="Distribuidora" element={<Distribuidora/>}/>
+                </Route>
+                <Route path="Tienda" element={<ItemListContainer/>}/>
+            </Routes>
+        </CartProvider>
     </BrowserRouter>
 )
 

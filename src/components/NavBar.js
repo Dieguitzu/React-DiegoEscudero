@@ -16,7 +16,8 @@ const NavBar = () => {
                     <LogoWidget />
                     <Nav className="me-auto m-2 navBotonera">
                         <li><NavLink to={process.env.PUBLIC_URL + "/"} className="botonera">Home</NavLink></li>
-                        <li><NavLink to={process.env.PUBLIC_URL + "/Tienda"} className="botonera">Tienda</NavLink></li>
+                        <li><NavLink to={process.env.PUBLIC_URL + "/Category/jabon"} className="botonera">Jabon</NavLink></li>
+                        <li><NavLink to={process.env.PUBLIC_URL + "/Category/cabello"} className="botonera">Cabello</NavLink></li>
                         <li><NavLink to={process.env.PUBLIC_URL + "/Distribuidora"} className="botonera">Distribuidora</NavLink></li>
                     </Nav>
                     <CartWitget />
