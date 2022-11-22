@@ -7,18 +7,16 @@ const ItemDetail = ({DetailItem}) => {
     const {addProduct} =  useCartContext()
 
     let [contador, setContador] = useState(1)
+    console.log(contador)
     const suma = () => {
         if(contador < 10){
             setContador(contador + 1)
         }
-        
     const resta = () => {
         if(contador > 1){
             setContador(contador - 1)
         }
     }
-
-
     const onAdd = () => {
         addProduct(DetailItem, contador)
     }
