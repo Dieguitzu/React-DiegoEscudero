@@ -10,9 +10,9 @@ import CartProvider from "../context/CartContext";
 
 
 const Router = () => (
-    
-    <BrowserRouter>
-        <CartProvider>
+
+    <CartProvider>    
+        <BrowserRouter>
             <Routes>  
                 <Route element={<Layout/>} path={process.env.PUBLIC_URL}>
                     <Route index element={<Init/>} />
@@ -23,8 +23,8 @@ const Router = () => (
                 </Route>
                 <Route path="Tienda" element={<ItemListContainer/>}/>
             </Routes>
-        </CartProvider>
-    </BrowserRouter>
+        </BrowserRouter>        
+    </CartProvider>
 )
 
 export default Router;
