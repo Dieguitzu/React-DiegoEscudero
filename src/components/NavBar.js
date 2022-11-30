@@ -18,7 +18,7 @@ const NavBar = () => {
                         <li><NavLink to={process.env.PUBLIC_URL + "/"} className="botonera">Home</NavLink></li>
                         <li><NavLink to={process.env.PUBLIC_URL + "/Category/jabon"} className="botonera">Jabon</NavLink></li>
                         <li><NavLink to={process.env.PUBLIC_URL + "/Category/cabello"} className="botonera">Cabello</NavLink></li>
-                        <li><NavLink to={process.env.PUBLIC_URL + "/Distribuidora"} className="botonera">Distribuidora</NavLink></li>
+                        <li><NavLink to={process.env.PUBLIC_URL + "/Cart"} className="botonera">Carrito</NavLink></li>
                     </Nav>
                     <CartWitget />
                 </Container>

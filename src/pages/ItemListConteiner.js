@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { getItems} from '../app/api'
+import { getItems, getItemsByCategory } from '../app/api'
 import ItemList from '../components/ItemList';
 import { useParams } from 'react-router-dom';
 
@@ -11,15 +11,16 @@ const ItemListConteiner = () => {
     const [data, setData]= useState([]);
     
     useEffect(() => {
-        getItems()
-        .then(response => {
-            if (idCategory){
-            setData(response.filter((item) => item.id === idCategory))
+        if(idCategory){
+            getItemsByCategory(idCategory) 
+            .then((res)=>setData(res))
         }else{
-            setData(response)
-            }
-        })
+            getItems()
+            .then(res=>setData(res))
+        }
+        
     }, [idCategory])
+    console.log(data)
     return (
         <div className=' products '>
             <ItemList data={data} />

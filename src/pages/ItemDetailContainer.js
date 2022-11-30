@@ -7,13 +7,11 @@ const ItemDetailContainer = () => {
     const { id } = useParams();
     const [data, setData] = useState({});
 
-
-
-    useEffect((id) => {
-        getItemById(id).then((data) => {
-            setData(data.find((data) => data.id === parseInt(id)));
-        });
-    }, []);
+    useEffect(()=>{
+    getItemById(id)
+    .then((res)=> setData(res))
+    },[id])
+        
     return (
         <div className='divItemList p-1'>
             {" "}

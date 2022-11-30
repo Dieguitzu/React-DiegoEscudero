@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
-  background-image: url(../public/img/fondo.webp);
+  background-image: url(../src/assets/fondo.webp);
   background-attachment: fixed;
   display:flex;
   flex-direction: column;
