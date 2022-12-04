@@ -1,0 +1,25 @@
+.liItemCI {
+    text-decoration: none !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ulTableCI {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    width: 13rem;
+    flex-wrap: nowrap;
+}
+
+.divProd{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.danger{
+    max-height: 35px !important;
+}
+

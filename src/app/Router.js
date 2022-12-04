@@ -10,16 +10,16 @@ import CartProvider from "../context/CartContext";
 
 const Router = () => (
 
-    <CartProvider>    
+    <CartProvider>
         <BrowserRouter>
             <Routes>  
                 <Route element={<Layout/>} path={process.env.PUBLIC_URL}>
+                    <Route path="Tienda" element={<ItemListContainer/>}/>
                     <Route index element={<Init/>} />
                     <Route path="Item/:id" element={<ItemDetailContainer/>} />
                     <Route path="Category/:idCategory" element={<ItemListContainer/>} />
                     <Route path="Cart" element={<Cart/>}/>
                 </Route>
-                <Route path="Tienda" element={<ItemListContainer/>}/>
             </Routes>
         </BrowserRouter>        
     </CartProvider>

@@ -1,0 +1,59 @@
+.h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+    padding: 50px;
+}
+
+.liTable{
+    text-decoration: none !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ulTable{
+    padding-right: 110px;
+    padding-left: 50px;
+    border: solid .5px black !important;
+}
+
+.divProdCart{
+    display: flex !important; 
+    flex-direction: column !important;
+
+}
+
+.divTabla{
+    display: flex;
+    flex-direction: column;
+}
+
+.btnRet{
+    max-width: 200px;
+
+
+}
+
+.total{
+display: flex;
+margin: 8px;
+margin-left: 20px;
+}
+
+.divCierre{
+    display: flex;
+    justify-content: center;
+}
+.divBtn {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.btn-eliminar{
+    height: 50px;
+    display: flex !important;
+    justify-content: center !important;
+
+}

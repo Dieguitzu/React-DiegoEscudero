@@ -20,7 +20,6 @@ const ItemListConteiner = () => {
         }
         
     }, [idCategory])
-    console.log(data)
     return (
         <div className=' products '>
             <ItemList data={data} />

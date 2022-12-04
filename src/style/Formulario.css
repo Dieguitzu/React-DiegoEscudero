@@ -1,0 +1,13 @@
+.divForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    margin:5px;
+
+}
