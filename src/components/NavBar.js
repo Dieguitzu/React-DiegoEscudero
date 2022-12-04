@@ -6,13 +6,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import LogoWidget from './LogoWidget';
 import CartWitget from './CartWitget';
 
-
 const NavBar = () => {
     
     return(
         <div>
             <Navbar bg="dark" variant="dark" className="navBar">
-                <Container>
+                <Container className="NavContainer">
                     <LogoWidget />
                     <Nav className="me-auto m-2 navBotonera">
                         <li><NavLink to={process.env.PUBLIC_URL + "/"} className="botonera">Home</NavLink></li>

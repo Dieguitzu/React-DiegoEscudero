@@ -1,20 +1,30 @@
 .App {
   text-align: center;
 }
-
 .App-logo {
-  height:18vmin;
-  pointer-events: none;
-  margin: -20px;
   position: relative;
-  right: 100px;
-  margin-right: 600px;
-  margin-left: 20px;
+  color:  .1;
+}
+.linkLogo{
+  max-width: 100px !important;
+  padding: -30px;
+}
+.btnLogo{
+  background-color: rgb(0, 0, 0, .01);
+  margin: -5px;
+  max-width: fit-content;
+  padding-right: -400px !important;
+  border: none;
+}
+.divLogo{
+  width:600px;
+  margin-right: 150px; 
+  margin-left: -70px;
+  padding-right: -400px !important;
 }
 .navBar{
   opacity: .6;
 }
-
 .btn{
   background-color: #aa638f !important;
   border-color: rgb(12, 12, 12) !important;
@@ -24,17 +34,13 @@
     color: rgb(190, 186, 186) !important;
       text-decoration: none;
 }
-
 .btn2{
     text-decoration: none !important;
         color: black !important;
 }
-
 .ItemCount{
   border: solid 0,1px black !important;
 }
-
-
 .App-header {
   background-color: #2c61ca;
   min-height: 100vh;
@@ -44,13 +50,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-
 }
-
 .App-link {
   color: #61dafb;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -59,11 +62,9 @@
     transform: rotate(360deg);
   }
 }
-
 .navBotonera{
   margin-right: 50px;
 }
-
 .botonera{
   margin-right: 20px;
   text-decoration: none;
@@ -73,21 +74,17 @@
   color:rgb(190, 186, 186);
   text-decoration: none;
 }
-
 .emoji{
   margin-left:20px;
   background-color: rgb(0, 0, 0, .01);
   border: none;
 }
-
 .divItemList{
   margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center !important;
 }
-
-
 .divItemDetail{
     background-color: rgb(0, 0, 0, .1) !important;
     display: flex;
@@ -96,21 +93,18 @@
     width: 50rem;
     height: 40rem;
 }
-
 .imgProduct{
   width: 20rem;
 }
 .imgProductDetail{
   width: 25rem;
 }
-
 .resta:hover{
   cursor: pointer;
 }
 .suma:hover{
   cursor: pointer;
 }
-
 .ItemCount{
   border: solid .5px !important;
   display: flex;
@@ -120,13 +114,10 @@
   margin-left:20px;
   margin-bottom: 10px;
 }
-
 .botonCount{
   cursor: pointer;
   margin-bottom: -0.1%;
 }
-
-
 .btnDetail{
   text-decoration: none;
   color: rgb(0, 0, 0);
@@ -135,13 +126,11 @@
   color: rgb(190, 186, 186);
   text-decoration: none;
 }
-
 .itemDetailContainer{
   display: flex !important; 
   flex-direction: column !important;
   justify-content: center !important;
   align-items: center;
-
 }
 
 

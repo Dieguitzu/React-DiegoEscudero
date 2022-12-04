@@ -11,11 +11,12 @@ const CartProvider = ({children}) => {
 
   const clearCart = () => setCart([]);
 
-  const isInCart = (id) => cart.find(product => product.id === id) ;
+  const isInCart = (id) => cart.find(product => product.id === id);
   
   const removeProduct = (id) => setCart(cart.filter(product => product.id !== id));
 
 const addProduct = (item, newQuantity) => {
+
   const pedido = {...item, cantidad:newQuantity }
 
   if(isInCart(item.id)){
@@ -30,11 +31,8 @@ const addProduct = (item, newQuantity) => {
 })
   setCart(carritoActualizado)
   }else{
-    
   setCart([...cart, {...item, cantidad:newQuantity}])
-
   }
-
 }
 
   return (

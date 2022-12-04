@@ -10,10 +10,8 @@ const ItemDetail = ({ DetailItem }) => {
     const {addProduct} =  useCartContext()
 
 const onAdd = (cantidad)=>{
-    
     addProduct(DetailItem,cantidad)
     setCompra(true)
-
 }
 
     return (
